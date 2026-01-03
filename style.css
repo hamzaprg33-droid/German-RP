@@ -3,18 +3,20 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e2f;
+    /* Hintergrund mit Farbverlauf */
+    background: linear-gradient(135deg, #1e1e3f, #3e1e5f);
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* Navigation */
 nav {
-    background-color: #2e2e4f;
+    background-color: rgba(46, 46, 79, 0.9); /* leicht transparent */
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -38,6 +40,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ffcc00;
     color: #1e1e2f;
+    transform: scale(1.1);
 }
 
 /* Sections */
@@ -50,6 +53,8 @@ section {
 section h1, section h2, section h3 {
     color: #ffcc00;
     margin-bottom: 20px;
+    /* Textschatten für mehr Leben */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 section h1 {
@@ -65,14 +70,30 @@ section h3 {
     margin-top: 30px;
 }
 
+/* Paragraphen */
+p {
+    background-color: rgba(46, 46, 79, 0.6);
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+p:hover {
+    background-color: rgba(46, 46, 79, 0.85);
+}
+
 /* Links */
 a {
     color: #ffcc00;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ffd633;
 }
 
 /* Team-Liste */
@@ -83,21 +104,19 @@ a:hover {
 }
 
 #team ul li {
-    background-color: #2e2e4f;
+    background-color: rgba(46, 46, 79, 0.7);
     margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-/* Regelwerk */
-#regelwerk p {
-    background-color: #2e2e4f;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+#team ul li:hover {
+    background-color: rgba(46, 46, 79, 0.9);
+    transform: scale(1.02);
 }
 
-/* Buttons (falls du welche einfügst) */
+/* Buttons */
 button {
     background-color: #ffcc00;
     color: #1e1e2f;
@@ -111,6 +130,7 @@ button {
 
 button:hover {
     background-color: #e6b800;
+    transform: scale(1.05);
 }
 
 /* Responsive Design für Mobilgeräte */
