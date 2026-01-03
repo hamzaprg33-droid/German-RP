@@ -6,7 +6,7 @@ body {
     color: #fff;
     line-height: 1.6;
     /* Starker Farbverlauf, horizontal + diagonal sichtbar */
-    background: linear-gradient(135deg, #1a1a3f, #8a2be2);
+    background: linear-gradient(135deg, #1a1a3f, #00bfff);
 }
 
 /* Navigation */
@@ -112,3 +112,4 @@ button:hover {
     nav ul { flex-direction:column; gap:10px; }
     section { padding:40px 15px; }
 }
+
