@@ -1,0 +1,126 @@
+/* Grundlegendes Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #2e2e4f;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h1, section h2, section h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    font-size: 2.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+/* Links */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Team-Liste */
+#team ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#team ul li {
+    background-color: #2e2e4f;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Regelwerk */
+#regelwerk p {
+    background-color: #2e2e4f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Buttons (falls du welche einfügst) */
+button {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive Design für Mobilgeräte */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
