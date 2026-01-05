@@ -44,6 +44,7 @@ section {
     padding:60px 20px;
     max-width:900px;
     margin:0 auto;
+    z-index:1;
 }
 section h1, h2, h3 {
     color:#ffcc00;
