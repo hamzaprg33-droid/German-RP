@@ -142,6 +142,10 @@ footer p {
   transform: translateY(0);
 }
 
+#particles-js {
+      width: 100%;
+      height: 100%;
+}
 
 /* Responsive */
 @media(max-width:600px){
